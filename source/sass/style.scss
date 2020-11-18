@@ -1,3 +1,15 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "mixins/style-reset.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
+@import "blocks/page.scss";
+@import "blocks/navigation.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/button.scss";
+@import "blocks/main-unit.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/hotel-search.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";

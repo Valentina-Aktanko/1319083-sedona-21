@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 13px 10px;
+  border: 3px solid $background-btn;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $font-color-second;
+  text-decoration: none;
+  background-color: $background-btn;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $background-btn--hover;
+    background-color: $background-btn--hover;
+  }
+
+  &:active {
+    border-color: $background-btn--active;
+    background-color: $background-btn--active;
+    color: rgba($font-color-second, 0.3);
+  }
+
+  &:disabled {
+    border-color: $background-btn--disabled;
+    background-color: $background-btn--disabled;
+  }
+}

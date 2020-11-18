@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include style-reset;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
