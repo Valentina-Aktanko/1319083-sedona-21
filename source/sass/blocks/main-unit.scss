@@ -1,0 +1,36 @@
+.main-unit {
+  background-color: $background-block-second;
+}
+
+.main-unit__description {
+  padding: 55px 13px 39px 13px;
+  text-align: center;
+  color: $font-color-second;
+}
+
+.main-unit__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-bottom: 18px;
+  margin: 0;
+}
+
+.main-unit__number {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  padding-bottom: 27px;
+  margin: 0;
+}
+
+.main-unit__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.main-unit__image-wrapper {
+  background-color: $background-color-photo;
+}

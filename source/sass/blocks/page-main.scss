@@ -1,0 +1,32 @@
+.page-main__image-wrapper {
+  background-color: $background-color-second;
+}
+
+.page-main__image-wrapper--index {
+  min-height: 389px;
+}
+
+.page-main__text-unit {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  margin: 0 20px;
+}
+
+.page-main__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+  padding-bottom: 44px;
+  margin: 0;
+}
+
+.page-main__text {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+  color: $font-color-base;
+  margin: 0;
+}
