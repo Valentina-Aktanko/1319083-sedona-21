@@ -1,0 +1,28 @@
+.fieldset-attractions {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.fieldset-attractions__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+}
+
+.fieldset-attractions__input-wrap {
+  @include style-reset;
+}
+
+.fieldset-attractions__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+}
+
+.fieldset-attractions__input-box:not(:last-child) {
+  margin-bottom: 34px;
+}

@@ -2,7 +2,11 @@
   background-color: $background-color-second;
 }
 
-.page-main__image-wrapper--index {
+.page-main__image-wrapper {
+  min-height: 159px;
+}
+
+.page-main__image-wrapper.page-main__image-wrapper--index {
   min-height: 389px;
 }
 

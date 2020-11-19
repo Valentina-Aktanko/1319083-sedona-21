@@ -1,0 +1,36 @@
+.fieldset-name {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.fieldset-name__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+}
+
+.fieldset-name__input-wrap {
+  @include style-reset;
+}
+
+.fieldset-name__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $font-color-base;
+}
+
+.fieldset-name__input{
+  height: 58px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 22px;
+  background-color: $background-input;
+  border: none;
+}
+
+.fieldset-name__input-box:not(:last-child) {
+  margin-bottom: 20px;
+}
