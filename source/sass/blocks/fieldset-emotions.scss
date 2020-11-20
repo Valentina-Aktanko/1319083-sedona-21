@@ -1,0 +1,23 @@
+.fieldset-emotions {
+  padding-top: 20px;
+  padding-bottom: 51px;
+}
+
+.fieldset-emotions__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+  margin: 15px;
+}
+
+.fieldset-emotions__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $font-color-title;
+  height: 160px;
+  padding: 13px 23px 29px 21px;
+  background-color: $background-input;
+}

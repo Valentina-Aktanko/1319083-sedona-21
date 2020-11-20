@@ -1,0 +1,28 @@
+.fieldset-impression {
+  padding-top: 20px;
+  padding-bottom: 31px;
+}
+
+.fieldset-impression__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+}
+
+.fieldset-impression__input-wrap {
+  @include style-reset;
+}
+
+.fieldset-impression__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: $font-color-title;
+}
+
+.fieldset-impression__input-box:not(:last-child) {
+  margin-bottom: 21px;
+}
