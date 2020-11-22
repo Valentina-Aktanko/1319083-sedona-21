@@ -1,6 +1,21 @@
+.navigation {
+  padding-bottom: 56px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    padding-bottom: 0;
+  }
+}
+
 .navigation__logo {
   position: absolute;
-  top: 233px;
+  bottom: -33px;
   left: 50%;
   transform: translate(-50%);
+}
+
+.navigation__toggle {
+  position: absolute;
 }
