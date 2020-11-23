@@ -3,6 +3,13 @@
   padding-bottom: 25px;
 }
 
+@media (min-width: $tablet-width) {
+  .fieldset-name {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
+
 .fieldset-name__legend {
   font-size: 18px;
   line-height: 26px;
@@ -20,6 +27,7 @@
   line-height: 26px;
   font-weight: 400;
   color: $font-color-base;
+  margin-right: 10px;
 }
 
 .fieldset-name__input {
@@ -29,6 +37,10 @@
   padding-left: 22px;
   background-color: $background-input;
   border: none;
+}
+
+.fieldset-name__input-box {
+  display: flex;
 }
 
 .fieldset-name__input-box:not(:last-child) {
