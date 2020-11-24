@@ -1,6 +1,14 @@
 .page-footer {
-  margin: 0 20px;
-  padding-top: 30px;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__unit {
@@ -26,4 +34,29 @@
   line-height: 26px;
   color: $font-color-base;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__unit:nth-child(1) {
+    margin-left: 61px;
+  }
+
+  .page-footer__unit:nth-child(3) {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__unit:nth-child(1) {
+    margin-left: 118px;
+  }
+
+  .page-footer__unit:nth-child(3) {
+    margin-right: 120px;
+  }
 }
