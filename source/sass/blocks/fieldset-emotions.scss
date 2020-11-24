@@ -20,6 +20,13 @@
   color: $font-color-title;
 }
 
+@media (min-width: $tablet-width) {
+  .fieldset-emotions__legend {
+    font-size: 21px;
+    padding-bottom: 34px;
+  }
+}
+
 .fieldset-emotions__textarea {
   font-size: 18px;
   line-height: 26px;

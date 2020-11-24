@@ -36,7 +36,7 @@
   max-width: 450px;
   margin: 0 auto;
   &--form {
-    max-width: 470px;
+    max-width: 440px;
     margin: 0 auto;
   }
 }
@@ -46,6 +46,10 @@
   .unit-wrap {
     max-width: 490px;
     margin: 0 auto;
+  }
+
+  .page-main__text-unit {
+    border-bottom: none;
   }
 }
 
@@ -60,6 +64,8 @@
 }
 
 @media (min-width: $tablet-width) {
+
+
   .page-main__title {
     font-size: 21px;
   }
