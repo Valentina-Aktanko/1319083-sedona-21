@@ -4,13 +4,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main-image-wrapper {
+  .page-main__image-wrapper {
     min-height: 291px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main-image-wrapper {
+  .page-main__image-wrapper {
     min-height: 305px;
   }
 }
@@ -29,17 +29,28 @@
   padding-top: 35px;
   padding-bottom: 30px;
   margin: 0 20px;
+  border-bottom: 1px solid $border-color;
 }
 
 .unit-wrap {
   max-width: 450px;
   margin: 0 auto;
+
+  &--form {
+    max-width: 440px;
+    margin: 0 auto;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .unit-wrap {
     max-width: 490px;
     margin: 0 auto;
+  }
+
+  .page-main__text-unit {
+    border-bottom: none;
   }
 }
 

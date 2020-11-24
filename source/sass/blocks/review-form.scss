@@ -1,5 +1,6 @@
 .review-form {
-  margin: 0 20px;
+  display: grid;
+  padding-top: 20px;
 }
 
 .review-form__fieldset {
@@ -8,6 +9,60 @@
   border: none;
 }
 
+.review-form__fieldset:not(:last-of-type) {
+  border-bottom: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .review-form {
+
+    padding: 60px 60px 0;
+  }
+
+  .review-form__fieldset:not(:last-of-type) {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    padding: 60px 120px 0;
+  }
+}
+
 .review-form__button {
   margin: 0 auto;
+}
+
+.review-form__required-field-note {
+  font-size: 14px;
+  line-height: 26px;
+  color: $font-color-base;
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .review-form__button-wrapper {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .review-form__button {
+    margin: 0;
+    width: 324px;
+  }
+
+  .review-form__required-field-note {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review-form__button {
+    width: 480px;
+  }
 }

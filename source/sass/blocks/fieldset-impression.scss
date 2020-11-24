@@ -3,12 +3,34 @@
   padding-bottom: 31px;
 }
 
+@media (min-width: $tablet-width) {
+  .fieldset-impression {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding-bottom: 72px;
+  }
+}
+
 .fieldset-impression__legend {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: $font-color-title;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-impression__legend {
+    font-size: 21px;
+    text-align: left;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset-impression__legend {
+    margin-left: 80px;
+  }
 }
 
 .fieldset-impression__input-wrap {
@@ -19,7 +41,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   color: $font-color-title;
 }
 
