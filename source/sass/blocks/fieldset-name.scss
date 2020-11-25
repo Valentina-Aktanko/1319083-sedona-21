@@ -40,12 +40,19 @@
 }
 
 .fieldset-name__input {
+  width: 100%;
   height: 58px;
   font-size: 18px;
   line-height: 26px;
   padding-left: 22px;
   background-color: $background-input;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-name__input {
+    width: auto;
+  }
 }
 
 .fieldset-name__input-box {
