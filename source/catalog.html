@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -11,13 +13,13 @@
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation__logo" href="index.html"><img src="https://via.placeholder.com/150x150"
+        <a class="navigation__logo" href="index.html"><img src="img/logotype-mobile.svg" width="101" height="84"
             alt="Логотип Седона"></a>
         <ul class="navigation__list site-list">
-          <li class="site-list__item"><a href="index.html" class="site-list__link button">Главная</a></li>
-          <li class="site-list__item"><a href="" class="site-list__link button">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html" class="site-list__link button">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="" class="site-list__link button">НТМL Academy</a></li>
+          <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+          <li class="site-list__item"><a href="" class="site-list__link">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="" class="site-list__link">НТМL Academy</a></li>
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
@@ -27,8 +29,8 @@
       <div class="image-wrapper page-main__image-wrapper">
         <img class="image-wrapper__image" src="https://via.placeholder.com/150x150" alt="Седона">
       </div>
-      <div class="page-main__text-unit">
-        <h1 class="page-main__title">Фото и видео</h1>
+      <div class="page-main__text-unit unit-wrap--catalog">
+        <h1 class="page-main__title page-main__title--catalog">Фото и видео</h1>
         <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
@@ -36,28 +38,46 @@
         <h2 class="visually-hidden">Фотогалерея</h2>
         <ul class="photo__list gallery">
           <li class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Живописный вид на шоссе">
-            <h3 class="gallery__subtitle">Народные просторы</h3>
-            <p class="gallery__author">Автор фото: Борис</p>
-            <div class="gallery__counter">1350</div>
+            <div class="gallery__image--wrapper">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Живописный вид на шоссе">
+            </div>
+            <div class="gallery__text-wrapper">
+              <h3 class="gallery__subtitle">Народные просторы</h3>
+              <p class="gallery__author">Автор фото: Борис</p>
+              <div class="gallery__counter">1350</div>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Изображение цветущего растения">
-            <h3 class="gallery__subtitle">Местная растительность</h3>
-            <p class="gallery__author">Автор фото: Сергей</p>
-            <div class="gallery__counter">143</div>
+            <div class="gallery__image--wrapper">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="Изображение цветущего растения">
+            </div>
+            <div class="gallery__text-wrapper">
+              <h3 class="gallery__subtitle">Местная растительность</h3>
+              <p class="gallery__author">Автор фото: Сергей</p>
+              <div class="gallery__counter">143</div>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Вид сверху на горный серпантин">
-            <h3 class="gallery__subtitle">Дорога на север</h3>
-            <p class="gallery__author">Автор фото: Петр</p>
-            <div class="gallery__counter">96</div>
+            <div class="gallery__image--wrapper">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="Вид сверху на горный серпантин">
+            </div>
+            <div class="gallery__text-wrapper">
+              <h3 class="gallery__subtitle">Дорога на север</h3>
+              <p class="gallery__author">Автор фото: Петр</p>
+              <div class="gallery__counter">96</div>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Фото скалы Devil's Bridge">
-            <h3 class="gallery__subtitle">Мост Дьявола</h3>
-            <p class="gallery__author">Автор фото: Антон</p>
-            <div class="gallery__counter">254</div>
+            <div class="gallery__image--wrapper">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="Фото скалы Devil's Bridge">
+            </div>
+            <div class="gallery__text-wrapper">
+              <h3 class="gallery__subtitle">Мост Дьявола</h3>
+              <p class="gallery__author">Автор фото: Антон</p>
+              <div class="gallery__counter">254</div>
+            </div>
           </li>
         </ul>
       </section>
@@ -89,7 +109,8 @@
       </div>
       <div class="page-footer__unit">
         <p class="page-footer__copyright-text">Разработано</p>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="26" height="34" alt="иконка HTML Academy"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/htmlacademy.svg" width="26" height="34" alt="иконка HTML Academy"></a>
       </div>
     </footer>
   </div>
