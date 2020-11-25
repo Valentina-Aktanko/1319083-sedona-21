@@ -1,6 +1,15 @@
 .fieldset-emotions {
   padding-top: 20px;
   padding-bottom: 51px;
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-emotions {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    margin: 0;
+  }
 }
 
 .fieldset-emotions__legend {
@@ -9,7 +18,13 @@
   font-weight: 700;
   text-align: center;
   color: $font-color-title;
-  margin: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset-emotions__legend {
+    font-size: 21px;
+    padding-bottom: 34px;
+  }
 }
 
 .fieldset-emotions__textarea {
@@ -18,6 +33,8 @@
   font-weight: 700;
   color: $font-color-title;
   height: 160px;
+  width: 100%;
   padding: 13px 23px 29px 21px;
   background-color: $background-input;
+  box-sizing: border-box;
 }
