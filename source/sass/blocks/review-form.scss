@@ -63,6 +63,12 @@
 
 @media (min-width: $tablet-width) {
   .review-form__button {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form__button {
     width: 480px;
   }
 }

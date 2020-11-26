@@ -38,6 +38,11 @@
     max-width: 440px;
     margin: 0 auto;
   }
+
+  &--catalog {
+    max-width: 440px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -65,6 +70,14 @@
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 21px;
+  }
+
+  .page-main__title--form {
+    font-size: 30px;
+  }
+
+  .page-main__title--catalog {
+    font-size: 30px;
   }
 }
 

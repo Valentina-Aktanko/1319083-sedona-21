@@ -2,9 +2,110 @@
   @include style-reset;
 }
 
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: grid;
+  }
+}
+
 .gallery__item {
   padding-top: 20px;
   padding-bottom: 21px;
+  border-bottom: 1px solid $border-color;
+}
+
+.gallery__image--wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery__text-wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__item {
+    border: none;
+  }
+
+  .gallery__item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+
+  .gallery__item:nth-child(-n+2) .gallery__text-wrapper {
+    background-color: $background-input;
+  }
+
+  .gallery__item:nth-child(n+3):nth-child(-n+4) .gallery__text-wrapper {
+    background-color: $background-color-photo;
+  }
+
+  .gallery__image--wrapper {
+    padding: 0;
+  }
+
+  .gallery__text-wrapper {
+    display: grid;
+    padding: 0;
+  }
+
+  .gallery__subtitle {
+    padding-left: 21px;
+  }
+
+  .gallery__author {
+    padding-left: 21px;
+  }
+
+  .gallery__counter {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    text-align: right;
+    padding: 40px 36px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery__item:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+
+  .gallery__item:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .gallery__item:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .gallery__item:nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+
+  .gallery__text-wrapper {
+    position: relative;
+    top: -104px;
+  }
+
+  .gallery__item:nth-child(-n+2) .gallery__text-wrapper {
+    background-color: $black;
+    opacity: 0.3;
+  }
+
+  .gallery__item:nth-child(n+3):nth-child(-n+4) .gallery__text-wrapper {
+    background-color: $black;
+    opacity: 0.3;
+  }
 }
 
 .gallery__subtitle {
@@ -13,7 +114,6 @@
   font-weight: 700;
   text-align: left;
   color: $font-color-title;
-  margin-bottom: 15px;
 }
 
 .gallery__author {
@@ -22,7 +122,6 @@
   font-weight: 400;
   text-align: left;
   color: $font-color-base;
-  margin-bottom: 15px;
 }
 
 .gallery__counter {
@@ -30,4 +129,18 @@
   line-height: 24px;
   font-weight: 700;
   color: $font-color-title;
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__subtitle {
+    color: $white;
+  }
+
+  .gallery__author {
+    color: $white;
+  }
+
+  .gallery__counter {
+    color: $white;
+  }
 }
