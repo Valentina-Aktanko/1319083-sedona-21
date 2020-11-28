@@ -1,0 +1,10 @@
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper__image {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  transform: translate(-50%);
+}
