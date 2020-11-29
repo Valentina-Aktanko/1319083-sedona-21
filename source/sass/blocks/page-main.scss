@@ -30,6 +30,18 @@
   border-bottom: 1px solid $border-color;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__text-unit {
+    padding: 35px 20px 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__text-unit {
+    padding: 36px 20px 40px;
+  }
+}
+
 .unit-wrap {
   max-width: 450px;
   margin: 0 auto;
@@ -44,7 +56,6 @@
     margin: 0 auto;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .unit-wrap {
@@ -63,13 +74,14 @@
   font-weight: 700;
   text-align: center;
   color: $font-color-title;
-  padding: 0 10px 44px;
+  padding: 0 10px 30px;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 21px;
+    padding: 10px 10px 30px;
   }
 
   .page-main__title--form {
@@ -78,6 +90,12 @@
 
   .page-main__title--catalog {
     font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    padding: 22px 10px 30px;
   }
 }
 

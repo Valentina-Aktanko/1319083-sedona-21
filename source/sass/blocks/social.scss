@@ -9,8 +9,19 @@
 .social__item {
   width: 46px;
   height: 48px;
+  padding-bottom: 44px;
 }
 
 .social__item:not(:last-child) {
   margin-right: 6px;
+}
+
+.social__link {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.social__link:active img {
+  opacity: 0.3;
 }
