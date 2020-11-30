@@ -2,9 +2,15 @@
   position: relative;
 }
 
-.image-wrapper__image {
+.page-main__image-wrapper.page-main__image-wrapper--index .image-wrapper__image {
   position: absolute;
   left: 50%;
   top: 90px;
   transform: translate(-50%);
+}
+
+.page-main__image-wrapper .image-wrapper__image {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
 }
