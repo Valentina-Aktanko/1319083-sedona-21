@@ -1,74 +1,79 @@
-.review-form {
-  display: grid;
-  padding-top: 20px;
-}
-
 .review-form__fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none;
 }
 
-.review-form__fieldset:not(:last-of-type) {
-  border-bottom: 1px solid $border-color;
-}
-
-@media (min-width: $tablet-width) {
-  .review-form {
-
-    padding: 60px 60px 0;
-  }
-
-  .review-form__fieldset:not(:last-of-type) {
-    border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .review-form {
-    padding: 60px 120px 0;
-  }
-}
-
-.review-form__button {
-  margin: 0 auto;
-}
-
 .review-form__required-field-note {
-  font-size: 14px;
-  line-height: 26px;
-  color: $font-color-base;
   display: none;
 }
 
+.review-form__button-wrapper {
+  display: flex;
+  padding: 0 20px 37px;
+  justify-content: center;
+}
+
+.review-form__button {
+  flex-grow: 1;
+}
 
 @media (min-width: $tablet-width) {
+  .review-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 60px;
+    position: relative;
+  }
+
+  .review-form::before {
+    content: "";
+    position: absolute;
+    width: 292px;
+    height: 1px;
+    background-color: $border-color;
+    z-index: 100;
+    left: 50%;
+    top: 148px;
+    transform: translate(-50%) rotate(90deg);
+  }
+
+  .review-form__fieldset {
+    padding: 0;
+  }
+
   .review-form__button-wrapper {
     grid-row: 5/6;
     grid-column: 1/3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 61px;
   }
 
   .review-form__button {
-    margin: 0;
+    flex-grow: 0;
     width: 324px;
+    padding: 15px 18px 11px 7px;
   }
 
   .review-form__required-field-note {
     display: block;
-    text-align: right;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .review-form__button {
-    width: 324px;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .review-form {
+    padding: 0 120px;
+  }
+
   .review-form__button {
+    flex-grow: 0;
     width: 480px;
+    padding: 15px 5px 11px 7px;
+  }
+
+  .review-form__button-wrapper {
+    margin-bottom: 65px;
   }
 }
