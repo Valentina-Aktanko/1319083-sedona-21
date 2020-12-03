@@ -3,15 +3,50 @@
   min-height: 159px;
 }
 
+.page-main__image-wrapper--catalog {
+  background-image: url("../../img/back-mobile.jpg");
+  background-position: 52% 47%;
+  background-repeat: no-repeat;
+  background-size: 768px 389px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-main__image-wrapper {
-    min-height: 291px;
+    min-height: 290px;
+  }
+
+  .page-main__image-wrapper--catalog {
+    background-image: url("../../img/back-tablet.jpg");
+    background-position: 50% -56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__image-wrapper {
-    min-height: 305px;
+    min-height: 301px;
+  }
+
+  .page-main__image-wrapper--catalog {
+    background-image: url("../../img/back-desktop.jpg");
+    background-position: 50% -56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
@@ -78,6 +113,7 @@
   margin: 0;
 }
 
+
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 21px;
@@ -91,12 +127,17 @@
 
   .page-main__title--catalog {
     font-size: 30px;
+    padding-bottom: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
     padding: 22px 10px 30px;
+  }
+
+  .page-main__title--catalog {
+    padding-bottom: 35px;
   }
 }
 
@@ -109,7 +150,8 @@
   margin: 0;
 }
 
-.unit-wrap--form .page-main__text {
+.unit-wrap--form .page-main__text,
+.unit-wrap--catalog .page-main__text {
   line-height: 24px;
 }
 
@@ -118,10 +160,19 @@
   padding-bottom: 15px;
 }
 
+.page-main__text-unit.unit-wrap--catalog {
+  padding-top: 31px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__text-unit.unit-wrap--form {
     padding-top: 51px;
     padding-bottom: 88px;
+  }
+
+  .page-main__text-unit.unit-wrap--catalog {
+    padding-top: 53px;
+    padding-bottom: 20px;
   }
 }
 
@@ -133,5 +184,11 @@
 
   .page-main__title--form {
     padding-bottom: 34px;
+  }
+
+  .page-main__text-unit.unit-wrap--catalog {
+    padding-top: 78px;
+    padding-bottom: 20px;
+    margin-bottom: 58px;
   }
 }
