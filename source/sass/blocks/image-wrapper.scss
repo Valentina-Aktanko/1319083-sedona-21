@@ -17,15 +17,6 @@
   top: 52px;
 }
 
-.page-main__image-wrapper .image-wrapper__triangle {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
-
 @media (min-width: $tablet-width) {
   .page-main__image-wrapper .image-wrapper__image {
     top: 95px;

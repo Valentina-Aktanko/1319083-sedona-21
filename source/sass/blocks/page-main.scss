@@ -4,13 +4,27 @@
 }
 
 .page-main__image-wrapper--catalog {
-  background-image: url("../../img/back-mobile.jpg");
-  background-position: 52% 47%;
+  position: relative;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: 30% 50%;
   background-repeat: no-repeat;
-  background-size: 768px 389px;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/intro-triangle-d.svg");
+    background-repeat: no-repeat;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 1200px;
+    height: 57px;
+    z-index: 10;
   }
 }
 
@@ -20,13 +34,13 @@
   }
 
   .page-main__image-wrapper--catalog {
-    background-image: url("../../img/back-tablet.jpg");
+    background-image: url("../img/back-tablet.jpg");
     background-position: 50% -56px;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/back-tablet@2x.jpg");
+      background-image: url("../img/back-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -38,13 +52,13 @@
   }
 
   .page-main__image-wrapper--catalog {
-    background-image: url("../../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-position: 50% -56px;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/back-desktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.jpg");
       background-size: cover;
     }
   }

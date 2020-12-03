@@ -16,6 +16,7 @@
         <a class="navigation__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
             <img src="img/logotype-mobile.svg" alt="Логотип Седона">
           </picture>
         </a>
@@ -36,11 +37,6 @@
           <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
           <img class="image-wrapper__image" src="img/SEDONA.svg">
         </picture>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/intro-triangle-d.svg">
-          <source media="(min-width: 768px)" srcset="img/intro-triangle-t.svg">
-          <img class="image-wrapper__triangle" src="img/intro-triangle-m.svg">
-        </picture>
       </div>
       <div class="page-main__text-unit unit-wrap--catalog">
         <h1 class="page-main__title page-main__title--catalog">Фото и видео</h1>
@@ -58,12 +54,12 @@
               <img class="gallery__image" src="img/photo-1-mobile.jpg", srcset="img/photo-1-mobile@2x.jpg" alt="Живописный вид на шоссе">
               </picture>
             </div>
-            <div class="gallery__text-wrapper .text-wrapper-road">
+            <div class="gallery__text-wrapper">
               <h3 class="gallery__subtitle">Нeродные просторы</h3>
               <p class="gallery__author">Автор фото: Борис</p>
               <div class="gallery__counter">
                 <button class="gallery__like-button" aria-label="Нравится!">
-                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
+                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
                 </button>
                 <span class="count">1350</span>
               </div>
@@ -77,12 +73,12 @@
               <img class="gallery__image" src="img/photo-2-mobile.jpg", srcset="img/photo-2-mobile@2x.jpg" alt="Изображение цветущего растения">
               </picture>
             </div>
-            <div class="gallery__text-wrapper gallery__text-wrapper--plant">
+            <div class="gallery__text-wrapper">
               <h3 class="gallery__subtitle">Местная растительность</h3>
               <p class="gallery__author">Автор фото: Сергей</p>
               <div class="gallery__counter">
                 <button class="gallery__like-button" aria-label="Нравится!">
-                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
+                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
                 </button>
               <span class="count">143</span></div>
             </div>
@@ -95,12 +91,12 @@
                 <img class="gallery__image" src="img/photo-3-mobile.jpg", srcset="img/photo-3-mobile@2x.jpg" alt="Вид сверху на горный серпантин">
               </picture>
             </div>
-            <div class="gallery__text-wrapper gallery__text-wrapper--serpentine">
+            <div class="gallery__text-wrapper">
               <h3 class="gallery__subtitle">Дорога на север</h3>
               <p class="gallery__author">Автор фото: Петр</p>
               <div class="gallery__counter">
                 <button class="gallery__like-button" aria-label="Нравится!">
-                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
+                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
                 </button>
               <span class="count">96</span></div>
             </div>
@@ -113,12 +109,12 @@
               <img class="gallery__image" src="img/photo-4-mobile.jpg", srcset="img/photo-4-mobile@2x.jpg" alt="Фото скалы Devil's Bridge">
               </picture>
             </div>
-            <div class="gallery__text-wrapper gallery__text-wrapper--devilbridge">
+            <div class="gallery__text-wrapper">
               <h3 class="gallery__subtitle">Мост Дьявола</h3>
               <p class="gallery__author">Автор фото: Антон</p>
               <div class="gallery__counter">
                 <button class="gallery__like-button" aria-label="Нравится!">
-                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
+                  <svg class="gallery__like-icon" width="23" height="21" xmlns="http://www.w3.org/2000/svg"><path d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"/></svg>
                 </button>
               <span class="count">254</span></div>
             </div>
@@ -126,7 +122,7 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="video__title">Всё еще сомневаетесь?</h2>
+        <h2 class="video__title">Всe еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <div class="video__preview">
@@ -138,7 +134,7 @@
         </div>
         <div class="video__control-panel control-panel">
           <div class="control-panel__scale">
-            <button class="control-panel__handle" type="button"></button>
+            <button class="control-panel__handle" type="button" aria-label="Ползунок"></button>
           </div>
 
           <div class="control-panel__buttons">
@@ -178,7 +174,7 @@
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg
               class="copyright-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="10 5 40 50">
               <path
-                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
             </svg>
           </a>
         </p>
