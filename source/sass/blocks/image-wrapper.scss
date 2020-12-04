@@ -1,5 +1,6 @@
 .image-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .page-main__image-wrapper.page-main__image-wrapper--index .image-wrapper__image {
@@ -13,4 +14,17 @@
   position: absolute;
   transform: translate(-50%);
   left: 50%;
+  top: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__image-wrapper .image-wrapper__image {
+    top: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__image-wrapper .image-wrapper__image {
+    top: 102px;
+  }
 }
