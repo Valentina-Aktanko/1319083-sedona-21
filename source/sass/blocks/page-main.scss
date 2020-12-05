@@ -66,28 +66,79 @@
 
 .page-main__image-wrapper.page-main__image-wrapper--index {
   min-height: 389px;
+  background-image: url("../img/index-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-back-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/intro-triangle-d.svg");
+    background-repeat: no-repeat;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 1200px;
+    height: 57px;
+    z-index: 10;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-main__image-wrapper.page-main__image-wrapper--index {
     min-height: 518px;
+    background-image: url("/img/index-back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("/img/index-back-tablet@2x.jpg");
+    }
   }
 }
 
 .page-main__text-unit {
   padding: 35px 20px 30px;
-  border-bottom: 1px solid $border-color;
+}
+
+.page-main__text-unit.unit-wrap.unit-wrap--index {
+  padding: 35px 20px 10px;
 }
 
 @media (min-width: $tablet-width) {
   .page-main__text-unit {
     padding: 35px 20px 53px;
   }
+
+  .page-main__text-unit.unit-wrap.unit-wrap--index {
+    padding-bottom: 53px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__image-wrapper.page-main__image-wrapper--index {
+    background-image: url("../img/index-back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-back-desktop@2x.jpg");
+    }
+  }
+
   .page-main__text-unit {
     padding: 36px 20px 40px;
+  }
+
+  .page-main__text-unit.unit-wrap.unit-wrap--index {
+    padding-bottom: 40px;
   }
 }
 
@@ -98,6 +149,7 @@
   &--form {
     max-width: 440px;
     margin: 0 auto;
+    border-bottom: 1px solid $border-color;
   }
 
   &--catalog {
