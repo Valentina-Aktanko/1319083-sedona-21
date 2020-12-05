@@ -98,7 +98,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-    background-image: url("/img/index-back-tablet@2x.jpg");
+      background-image: url("/img/index-back-tablet@2x.jpg");
     }
   }
 }
@@ -178,7 +178,6 @@
   padding: 0 10px 30px;
   margin: 0;
 }
-
 
 @media (min-width: $tablet-width) {
   .page-main__title {
