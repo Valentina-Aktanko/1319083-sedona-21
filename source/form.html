@@ -15,7 +15,8 @@
         <a class="navigation__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <img src="img/logotype-mobile.svg" salt="Логотип Седона">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Логотип Седона">
           </picture>
         </a>
         <ul class="navigation__list site-list">
@@ -29,8 +30,12 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__image-wrapper image-wrapper">
-        <img class="image-wrapper__image" src="https://via.placeholder.com/150x150" alt="Седона">
+      <div class="page-main__image-wrapper image-wrapper page-main__image-wrapper--form">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/SEDONA-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
+        <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
+        </picture>
       </div>
       <div class="page-main__text-unit unit-wrap--form">
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
@@ -156,6 +161,27 @@
       </div>
     </footer>
   </div>
+
+  <div class="modal-form modal-form--successfully pop-up--close">
+    <div class="modal-form__text-block modal-form__text-block--successfully">
+      <p class="modal-form__title">Ваш отзыв отправлен!</p>
+      <p class="modal-form__text modal-form__text--successfully" >Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
+    </div>
+    <div class="modal-form__button-block modal-form__button-block--successfully">
+      <button class="button modal-form__button modal-form__button--successfully">Закрыть окно</button>
+    </div>
+  </div>
+
+  <div class="modal-form modal-form--unsuccessfully pop-up--close">
+    <div class="modal-form__text-block modal-form__text-block--unsuccessfully">
+      <p class="modal-form__title">Что-то пошло не так!</p>
+      <p class="modal-form__text modal-form__text--unsuccessfully">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="modal-form__button-block modal-form__button-block--unsuccessfully">
+      <button class="button modal-form__button modal-form__button--unsuccessfully">OK</button>
+    </div>
+  </div>
+
   <script src="js/nav.js"></script>
 </body>
 
