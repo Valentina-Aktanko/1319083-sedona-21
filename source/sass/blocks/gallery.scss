@@ -36,9 +36,12 @@
   cursor: pointer;
 }
 
-.gallery__like-icon {
+.like-icon {
+  width: 23px;
+  height: 21px;
   fill: rgba($black, 0.3);
 }
+
 
 @media (min-width: $tablet-width) {
   .gallery {
@@ -199,7 +202,7 @@
     color: $white;
   }
 
-  .gallery__like-icon {
+  .like-icon {
     fill: rgba($white, 1);
   }
 }
