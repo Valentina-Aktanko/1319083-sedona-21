@@ -137,6 +137,8 @@ const reload = done => {
   done();
 }
 
+exports.reload = reload;
+
 // Watcher
 
 const watcher = () => {
