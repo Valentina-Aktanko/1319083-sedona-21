@@ -42,7 +42,7 @@
   background-color: $background-btn--disabled;
 }
 
-.fieldset-attractions__input:focus+.fieldset-attractions__label::before {
+.fieldset-attractions__input:focus + .fieldset-attractions__label::before {
   background-color: $background-btn--disabled;
 }
 

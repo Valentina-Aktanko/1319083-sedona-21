@@ -38,7 +38,7 @@
   background-color: $background-btn--disabled;
 }
 
-.fieldset-impression__input:focus+.fieldset-impression__label::before {
+.fieldset-impression__input:focus + .fieldset-impression__label::before {
   background-color: $background-btn--disabled;
 }
 
