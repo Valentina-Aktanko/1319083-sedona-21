@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -23,7 +25,7 @@
           <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
           <li class="site-list__item"><a href="catalog.html" class="site-list__link">Фото и видео</a></li>
           <li class="site-list__item"><a href="" class="site-list__link site-list__link--active">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="" class="site-list__link">НТМL Academy</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru" class="site-list__link">НТМL Academy</a></li>
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
@@ -31,11 +33,11 @@
     </header>
     <main class="page-main">
       <div class="page-main__image-wrapper image-wrapper page-main__image-wrapper--form">
-        <picture>
-        <source media="(min-width: 1200px)" srcset="img/SEDONA-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
-        <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
-        </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/SEDONA-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
+            <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
+          </picture>
       </div>
       <div class="page-main__text-unit unit-wrap--form">
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
@@ -125,7 +127,8 @@
         <fieldset class="review-form__fieldset fieldset-emotions">
           <legend class="fieldset-emotions__legend">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="message">Опишите свои впечатления</label>
-          <textarea class="fieldset-emotions__textarea" name="message" id="message">Опишите подробно все свои восторги</textarea>
+          <textarea class="fieldset-emotions__textarea" name="message"
+            id="message">Опишите подробно все свои восторги</textarea>
         </fieldset>
         <div class="review-form__button-wrapper">
           <button class="review-form__button button" type="submit">Отправить отзыв</button>
@@ -140,19 +143,26 @@
       <div class="page-footer__unit">
         <ul class="social">
           <li class="social__item"><a class="social__link button" href="https://twitter.com"><span
-                class="visually-hidden">Twitter</span><svg class="icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
-              </a></li>
+                class="visually-hidden">Twitter</span><svg class="icon-twitter">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
           <li class="social__item"><a class="social__link button" href="https://www.facebook.com"><span
-                class="visually-hidden">Facebook</span><svg class="icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a></li>
+                class="visually-hidden">Facebook</span><svg class="icon-facebook">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg></a></li>
           <li class="social__item"><a class="social__link button" href="https://www.youtube.com"><span
-                class="visually-hidden">Youtube</span><svg class="icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg></a></li>
+                class="visually-hidden">Youtube</span><svg class="icon-youtube">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg></a></li>
         </ul>
       </div>
       <div class="page-footer__unit">
         <p class="page-footer__copyright-text">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg class="copyright-icon">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg
+              class="copyright-icon">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </p>
       </div>
@@ -162,7 +172,8 @@
   <div class="modal-form modal-form--successfully pop-up--close">
     <div class="modal-form__text-block modal-form__text-block--successfully">
       <p class="modal-form__title">Ваш отзыв отправлен!</p>
-      <p class="modal-form__text modal-form__text--successfully" >Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
+      <p class="modal-form__text modal-form__text--successfully">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В&nbsp;ближайшее время мы опубликуем его на сайте</p>
     </div>
     <div class="modal-form__button-block modal-form__button-block--successfully">
       <button class="button modal-form__button modal-form__button--successfully">Закрыть окно</button>
@@ -172,7 +183,8 @@
   <div class="modal-form modal-form--unsuccessfully pop-up--close">
     <div class="modal-form__text-block modal-form__text-block--unsuccessfully">
       <p class="modal-form__title">Что-то пошло не так!</p>
-      <p class="modal-form__text modal-form__text--unsuccessfully">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <p class="modal-form__text modal-form__text--unsuccessfully">Проверьте поля, выделенные красным, скорее всего вы
+        забыли их заполнить</p>
     </div>
     <div class="modal-form__button-block modal-form__button-block--unsuccessfully">
       <button class="button modal-form__button modal-form__button--unsuccessfully">OK</button>
