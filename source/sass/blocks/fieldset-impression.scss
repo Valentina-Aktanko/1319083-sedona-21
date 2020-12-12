@@ -38,8 +38,8 @@
   background-color: $background-btn--disabled;
 }
 
-.fieldset-impression__label:active::before {
-  background-color: $background-input--active;
+.fieldset-impression__input:focus+.fieldset-impression__label::before {
+  background-color: $background-btn--disabled;
 }
 
 .fieldset-impression__label:active::after {
