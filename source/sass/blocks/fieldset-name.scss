@@ -23,7 +23,7 @@
   font-weight: 400;
   color: $font-color-base;
   padding-top: 17px;
-  padding-right: 13px;
+  padding-right: 14px;
 }
 
 .fieldset-name__input {
@@ -43,11 +43,12 @@
   box-shadow: inset 0 0 0 4px $background-btn--disabled;
 }
 
-.fieldset-name__input[value] {
+.fieldset-name__input::placeholder {
   font-family: $font-family-base;
   padding-left: 23px;
   font-weight: 700;
   font-size: 18px;
+  color: $black;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -81,15 +82,15 @@
   }
 
   .fieldset-name__input[name="firstname"] {
-    width: 194px;
+    width: 216px;
   }
 
   .fieldset-name__input[name="lastname"] {
-    width: 156px;
+    width: 178px;
   }
 
   .fieldset-name__input[name="patronymic"] {
-    width: 158px;
+    width: 182px;
   }
 
   .fieldset-name__input-box:last-child {
@@ -106,15 +107,15 @@
   }
 
   .fieldset-name__input[name="firstname"] {
-    width: 326px;
+    width: 350px;
   }
 
   .fieldset-name__input[name="lastname"] {
-    width: 288px;
+    width: 313px;
   }
 
   .fieldset-name__input[name="patronymic"] {
-    width: 291px;
+    width: 316px;
   }
 
   .fieldset-name__label {

@@ -24,7 +24,7 @@
   width: 58px;
   height: 58px;
   right: 0;
-  top: 32px;
+  top: 31px;
   background-color: $input-block;
 }
 
@@ -52,19 +52,23 @@
   font-size: 14px;
   font-weight: 26px;
   padding-left: 20px;
-  padding-bottom: 11px;
+  padding-bottom: 9px;
 }
 
 .fieldset-contacts__input {
   flex-grow: 1;
   height: 58px;
+  border: none;
+  background-color: $background-input;
+  margin-bottom: 14px;
+}
+
+.fieldset-contacts__input::placeholder {
   font-family: $font-family-base;
   font-size: 18px;
   font-weight: 700;
   padding: 0 0 0 22px;
-  border: none;
-  background-color: $background-input;
-  margin-bottom: 14px;
+  color: $black;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,7 +89,14 @@
   }
 
   .fieldset-contacts__input[type="tel"] {
+    padding-top: 7px;
     margin-bottom: 25px;
+    height: 52px;
+  }
+
+  .fieldset-contacts__input[type="email"] {
+    padding-top: 7px;
+    height: 52px;
   }
 }
 
@@ -116,7 +127,7 @@
     width: 316px;
   }
 
-  .fieldset-contacts__input[value] {
+  .fieldset-contacts__input::placeholder {
     margin-left: 18px;
   }
 
@@ -126,7 +137,7 @@
   }
 
   .fieldset-contacts__input-box::before {
-    top: 0;
+    top: 1px;
   }
 
   .fieldset-contacts__input-box--phone::after {
@@ -138,10 +149,18 @@
   }
 
   .fieldset-contacts__input[type="tel"] {
-    width: 292px;
+    width: 310px;
   }
 
   .fieldset-contacts__input[type="email"] {
-    width: 292px;
+    width: 314px;
+  }
+
+  .fieldset-contacts__input-box:nth-child(1) .fieldset-contacts__input {
+    margin-left: 15px;
+  }
+
+  .fieldset-contacts__input-box:nth-child(2) .fieldset-contacts__input {
+    margin-left: 17px;
   }
 }

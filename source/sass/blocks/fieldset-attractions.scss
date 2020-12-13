@@ -42,6 +42,10 @@
   background-color: $background-btn--disabled;
 }
 
+.fieldset-attractions__input:focus + .fieldset-attractions__label::before {
+  background-color: $background-btn--disabled;
+}
+
 .fieldset-attractions__label:active::before {
   background-color: $background-input--active;
 }
@@ -125,6 +129,10 @@
 
   .fieldset-attractions__input-box {
     width: auto;
+  }
+
+  .fieldset-attractions__label {
+    padding-bottom: 59px;
   }
 
   .fieldset-attractions__label[for="slide-park"] {
