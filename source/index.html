@@ -29,6 +29,7 @@
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
+        <!-- .navigaiton--opened - открывает мобильное меню, .navigation--closed  - закрывает мобильное меню -->
       </nav>
     </header>
     <main class="page-main">
@@ -62,8 +63,8 @@
               <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop 1x, img/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet 1x, img/photo-city-tablet@2x.jpg 2x">
-              <img class="main-unit__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260"
-                alt="Вид улицы города Седона">
+              <img class="main-unit__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x"
+                width="320" height="260" alt="Вид улицы города Седона">
             </picture>
           </div>
         </div>
@@ -106,8 +107,8 @@
                 srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="main-unit__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg" width="320" height="260"
-                alt="Вид на Мост дьявола">
+              <img class="main-unit__image" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg"
+                width="320" height="260" alt="Вид на Мост дьявола">
             </picture>
           </div>
         </div>
@@ -138,7 +139,9 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <iframe class="map__interactive" title="Интерактивная карта" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1775574.8964620333!2d-112.45599881230612!3d34.87430657000651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzA3LjEiTiAxMTHCsDQ1JzQyLjIiVw!5e0!3m2!1sru!2sru!4v1607744774859!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map__interactive" title="Интерактивная карта"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1775574.8964620333!2d-112.45599881230612!3d34.87430657000651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDUyJzA3LjEiTiAxMTHCsDQ1JzQyLjIiVw!5e0!3m2!1sru!2sru!4v1607744774859!5m2!1sru!2sru"
+          style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
@@ -147,20 +150,37 @@
       </div>
       <div class="page-footer__unit">
         <ul class="social">
-          <li class="social__item"><a class="social__link button" href="https://twitter.com"><span
-                class="visually-hidden">Twitter</span><svg class="icon-twitter"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
-              </a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.facebook.com"><span
-                class="visually-hidden">Facebook</span><svg class="icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg></a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.youtube.com"><span
-                class="visually-hidden">Youtube</span><svg class="icon-youtube"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg></a></li>
+          <li class="social__item">
+            <a class="social__link button" href="https://twitter.com"><span class="visually-hidden">Twitter</span><svg
+                class="icon-twitter">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="icon-facebook">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="icon-youtube">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__unit">
         <p class="page-footer__copyright-text">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg class="copyright-icon">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg class="copyright-icon">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </p>
       </div>
