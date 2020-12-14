@@ -29,15 +29,16 @@
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
+        <!-- .navigaiton--opened - открывает мобильное меню, .navigation--closed  - закрывает мобильное меню -->
       </nav>
     </header>
     <main class="page-main">
       <div class="page-main__image-wrapper image-wrapper page-main__image-wrapper--form">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/SEDONA-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
-            <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
-          </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/SEDONA-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/SEDONA-tablet.svg">
+          <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
+        </picture>
       </div>
       <div class="page-main__text-unit unit-wrap--form">
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
@@ -50,15 +51,18 @@
           <ul class="fieldset-name__input-wrap input-wrap">
             <li class="fieldset-name__input-box">
               <label class="fieldset-name__label" for="firstname">Имя*:</label>
-              <input class="fieldset-name__input" type="text" name="firstname" id="firstname" placeholder="Петр" required>
+              <input class="fieldset-name__input" type="text" name="firstname" id="firstname" placeholder="Петр"
+                required>
             </li>
             <li class="fieldset-name__input-box">
               <label class="fieldset-name__label" for="lastname">Фамилия*:</label>
-              <input class="fieldset-name__input" type="text" name="lastname" id="lastname" placeholder="Иванов" required>
+              <input class="fieldset-name__input" type="text" name="lastname" id="lastname" placeholder="Иванов"
+                required>
             </li>
             <li class="fieldset-name__input-box">
               <label class="fieldset-name__label" for="patronymic">Отчество:</label>
-              <input class="fieldset-name__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович" required>
+              <input class="fieldset-name__input" type="text" name="patronymic" id="patronymic"
+                placeholder="Александрович" required>
             </li>
           </ul>
         </fieldset>
@@ -69,7 +73,7 @@
               <label class="fieldset-contacts__label" for="phone"><span class="word-contact">Контактный </span>
                 телефон*:</label>
               <input class="fieldset-contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
-                pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
             </li>
             <li class="fieldset-contacts__input-box fieldset-contacts__input-box--email">
               <label class="fieldset-contacts__label" for="email">Электронная почта*:</label>
@@ -126,8 +130,8 @@
         <fieldset class="review-form__fieldset fieldset-emotions">
           <legend class="fieldset-emotions__legend">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="message">Опишите свои впечатления</label>
-          <textarea class="fieldset-emotions__textarea" name="message"
-            id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="fieldset-emotions__textarea" name="message" id="message"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="review-form__button-wrapper">
           <button class="review-form__button button" type="submit">Отправить отзыв</button>
@@ -141,25 +145,36 @@
       </div>
       <div class="page-footer__unit">
         <ul class="social">
-          <li class="social__item"><a class="social__link button" href="https://twitter.com"><span
-                class="visually-hidden">Twitter</span><svg class="icon-twitter">
+          <li class="social__item">
+            <a class="social__link button" href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="icon-twitter">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-            </a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.facebook.com"><span
-                class="visually-hidden">Facebook</span><svg class="icon-facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="icon-facebook">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg></a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.youtube.com"><span
-                class="visually-hidden">Youtube</span><svg class="icon-youtube">
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="icon-youtube">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
-              </svg></a></li>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__unit">
         <p class="page-footer__copyright-text">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg
-              class="copyright-icon">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg class="copyright-icon">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
@@ -169,6 +184,7 @@
   </div>
 
   <div class="modal-form modal-form--successfully pop-up--close">
+    <!-- Удаление .pop-up--close открывает модальное окно -->
     <div class="modal-form__text-block modal-form__text-block--successfully">
       <p class="modal-form__title">Ваш отзыв отправлен!</p>
       <p class="modal-form__text modal-form__text--successfully">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
@@ -180,6 +196,7 @@
   </div>
 
   <div class="modal-form modal-form--unsuccessfully pop-up--close">
+    <!-- Удаление .pop-up--close открывает модальное окно -->
     <div class="modal-form__text-block modal-form__text-block--unsuccessfully">
       <p class="modal-form__title">Что-то пошло не так!</p>
       <p class="modal-form__text modal-form__text--unsuccessfully">Проверьте поля, выделенные красным, скорее всего вы

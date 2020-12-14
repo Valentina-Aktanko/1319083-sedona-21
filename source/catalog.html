@@ -29,6 +29,7 @@
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
+        <!-- .navigaiton--opened - открывает мобильное меню, .navigation--closed  - закрывает мобильное меню -->
       </nav>
     </header>
     <main class="page-main">
@@ -59,8 +60,8 @@
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img class="gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280"
-                    alt="Живописный вид на шоссе">
+                  <img class="gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                    width="280" height="280" alt="Живописный вид на шоссе">
                 </picture>
               </a>
             </div>
@@ -89,8 +90,8 @@
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img class="gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" width="280" height="280"
-                    alt="Изображение цветущего растения">
+                  <img class="gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg"
+                    width="280" height="280" alt="Изображение цветущего растения">
                 </picture>
               </a>
             </div>
@@ -103,7 +104,8 @@
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                 </button>
-                <span class="count">143</span></div>
+                <span class="count">143</span>
+              </div>
             </div>
           </li>
           <li class="gallery__item">
@@ -118,8 +120,8 @@
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img class="gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" width="280" height="280"
-                    alt="Вид сверху на горный серпантин">
+                  <img class="gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg"
+                    width="280" height="280" alt="Вид сверху на горный серпантин">
                 </picture>
               </a>
             </div>
@@ -132,7 +134,8 @@
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                 </button>
-                <span class="count">96</span></div>
+                <span class="count">96</span>
+              </div>
             </div>
           </li>
           <li class="gallery__item">
@@ -147,8 +150,8 @@
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                  <img class="gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" width="280" height="280"
-                    alt="Фото скалы Devil's Bridge">
+                  <img class="gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg"
+                    width="280" height="280" alt="Фото скалы Devil's Bridge">
                 </picture>
               </a>
             </div>
@@ -161,7 +164,8 @@
                     <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                 </button>
-                <span class="count">254</span></div>
+                <span class="count">254</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -180,8 +184,8 @@
               <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video__preview-image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" width="320" height="201"
-                alt="Превью видеопрезентации">
+              <img class="video__preview-image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg" width="320"
+                height="201" alt="Превью видеопрезентации">
             </picture>
           </a>
         </div>
@@ -216,24 +220,36 @@
       </div>
       <div class="page-footer__unit">
         <ul class="social">
-          <li class="social__item"><a class="social__link button" href="https://twitter.com"><span
-                class="visually-hidden">Twitter</span><svg class="icon-twitter">
+          <li class="social__item">
+            <a class="social__link button" href="https://twitter.com">
+              <span class="visually-hidden">Twitter</span>
+              <svg class="icon-twitter">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-            </a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.facebook.com"><span
-                class="visually-hidden">Facebook</span><svg class="icon-facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.facebook.com">
+              <span class="visually-hidden">Facebook</span>
+              <svg class="icon-facebook">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg></a></li>
-          <li class="social__item"><a class="social__link button" href="https://www.youtube.com"><span
-                class="visually-hidden">Youtube</span><svg class="icon-youtube">
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link button" href="https://www.youtube.com">
+              <span class="visually-hidden">Youtube</span>
+              <svg class="icon-youtube">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
-              </svg></a></li>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__unit">
         <p class="page-footer__copyright-text">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <svg
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg
               class="copyright-icon">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
