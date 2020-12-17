@@ -10,10 +10,10 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="body">
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="navigation navigation--opened navigation--nojs">
+      <nav class="navigation navigation--opened navigation--closed">
         <a class="navigation__logo" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
@@ -29,7 +29,7 @@
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
-        <!-- .navigaiton--opened - открывает мобильное меню, .navigation--closed  - закрывает мобильное меню -->
+        <!-- Если не работает скрипт удаление .navigaiton--opened закроет навигационное меню, добавление .navigation--opened откроет навигационное меню  -->
       </nav>
     </header>
     <main class="page-main">
@@ -40,7 +40,7 @@
           <img class="image-wrapper__image" src="img/SEDONA.svg" alt="Седона">
         </picture>
       </div>
-      <div class="page-main__text-unit unit-wrap--form">
+      <div class="page-main__text-unit unit-wrap unit-wrap--form">
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
         <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
@@ -183,8 +183,8 @@
     </footer>
   </div>
 
-  <div class="modal-form modal-form--successfully pop-up--close">
-    <!-- Удаление .pop-up--close открывает модальное окно -->
+  <div class="modal-form modal-form--successfully modal-form--close">
+    <!-- Удаление .modal-form--close открывает модальное окно -->
     <div class="modal-form__text-block modal-form__text-block--successfully">
       <p class="modal-form__title">Ваш отзыв отправлен!</p>
       <p class="modal-form__text modal-form__text--successfully">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
@@ -195,8 +195,8 @@
     </div>
   </div>
 
-  <div class="modal-form modal-form--unsuccessfully pop-up--close">
-    <!-- Удаление .pop-up--close открывает модальное окно -->
+  <div class="modal-form modal-form--unsuccessfully modal-form--close">
+    <!-- Удаление .modal-form--close открывает модальное окно -->
     <div class="modal-form__text-block modal-form__text-block--unsuccessfully">
       <p class="modal-form__title">Что-то пошло не так!</p>
       <p class="modal-form__text modal-form__text--unsuccessfully">Проверьте поля, выделенные красным, скорее всего вы

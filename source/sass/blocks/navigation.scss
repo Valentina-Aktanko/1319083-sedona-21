@@ -89,12 +89,22 @@
   }
 }
 
-.navigation--nojsj .navigation__toggle {
+.navigation--closed.navigation-opened .navigation__toggle {
   display: none;
 }
 
 .navigation--closed .site-list__item {
   display: none;
+}
+
+.navigation--closed.navigation--opened .site-list__item {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation--closed .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {

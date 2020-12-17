@@ -3,12 +3,12 @@
   padding-bottom: 49px;
 }
 
-.search-wrap {
+.hotel-search--wrap {
   max-width: 498px;
   margin: 0 auto;
 }
 
-.hotel-comma {
+.hotel-search__comma {
   display: none;
 }
 
@@ -51,7 +51,7 @@
     padding: 0 10px 38px;
   }
 
-  .hotel-comma {
+  .hotel-search__comma {
     display: block;
   }
 }

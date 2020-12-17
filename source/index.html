@@ -10,10 +10,10 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="body">
   <div class="page-wrapper">
     <header class="page-header">
-      <nav class="navigation navigation--opened navigation--nojs">
+      <nav class="navigation navigation--opened navigation--closed">
         <a class="navigation__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
@@ -29,7 +29,7 @@
         </ul>
         <button class="navigation__toggle navigation__toggle--off" type="button"><span class="visually-hidden">Кнопка
             меню</span></button>
-        <!-- .navigaiton--opened - открывает мобильное меню, .navigation--closed  - закрывает мобильное меню -->
+        <!-- Если не работает скрипт удаление .navigaiton--opened закроет навигационное меню, добавление .navigation--opened откроет навигационное меню  -->
       </nav>
     </header>
     <main class="page-main">
@@ -90,7 +90,7 @@
         </ul>
         <div class="advantages__unit main-unit main-unit--reverse">
           <div class="main-unit__description">
-            <h2 class="main-unit__title main-unit-title--reverse">Там есть мост дьявола</h2>
+            <h2 class="main-unit__title">Там есть мост дьявола</h2>
             <p class="main-unit__number">&mdash; №2 &mdash;</p>
             <p class="main-unit__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
@@ -130,9 +130,9 @@
           </li>
         </ul>
       </section>
-      <section class="hotel-search search-wrap">
+      <section class="hotel-search hotel-search--wrap">
         <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__direction">Укажите предполагаемые даты поездки,<br class="hotel-comma"> и мы покажем вам
+        <p class="hotel-search__direction">Укажите предполагаемые даты поездки,<br class="hotel-search__comma"> и мы покажем вам
           лучшие предложения
           гостиниц в Седоне</p>
         <a class="hotel-search__button button" href="blank.html">Найти гостиницу</a>
